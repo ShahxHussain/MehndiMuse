@@ -14,7 +14,7 @@ import random
 load_dotenv()
 
 # Access the API key
-api_key = os.getenv("API_KEY")
+api_key = st.secrets["API_KEY"]
 client = genai.Client(api_key=api_key)  # Replace with your actual API key
 
 # Set custom page config and theme
